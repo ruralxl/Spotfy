@@ -1,0 +1,790 @@
+/*
+* 
+* @author Jamilton Damasceno
+*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clear{
+	clear: both;
+}
+
+/* Layout
+-----------------------------*/
+html, body, #home{
+	height: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	background: url(../imagens/capa.png),
+				url(../imagens/ruido.png),
+				linear-gradient(50deg,#ff4169,#7c26f8);
+	background-attachment: fixed;
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+/* Barra de navegação
+-----------------------------*/
+nav.navbar-transparente {
+	padding: 15px 0px;
+	background: rgba(0,0,0,0.6);
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #9bf0e1;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,0.5);
+}
+
+.divisor {
+	width: 1px;
+	background: white;
+	margin: 12px 15px;
+}
+
+/* Capa
+-----------------------------*/
+.capa {
+	text-align: center;
+}
+
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+
+.btn-roxo {
+	background: #7c25f8;
+}
+
+.btn-roxo:hover {
+	background: #6207e3;
+	color: white;
+}
+
+.btn-branco {
+	border: 2px solid white;
+}
+
+.btn-branco:hover {
+	background-color: white;
+	color: black;
+}
+
+.carousel-control-next, .carousel-control-prev {
+	width: 5%;
+}
+
+/* Estrutura conteúdos
+-----------------------------*/
+.caixa {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#servicos {
+	background: white;
+}
+
+#recursos {
+	color: white;
+}
+
+#servicos h2, h3 {
+	color: #7c25f8;
+}
+
+#recursos h2 {
+	color: white;
+}
+
+#recursos h3 {
+	color: #9bf0e1;
+}
+
+.albuns {
+	padding: 10px 0;
+}
+
+.rotacionar {
+	-ms-transform: rotate(30deg); /* IE 9 */
+    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+    transform: rotate(30deg);
+	padding-left: 80px;
+}
+
+/* Rodapé
+-----------------------------*/
+footer {
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+footer h4 {
+	color: #919496;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+	color: white;
+	font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover {
+	color: #9bf0e1;
+	text-decoration: none;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer ul li {
+	float: right;
+	margin: 0 5px;
+}
+
+/* Tipografia
+-----------------------------*/
+h1 {
+	font-weight: 900;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+	color: white;
+}
+
+h2 {
+	font-size: 3em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+/*Premium--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*chamada:*/
+.chamada{
+	margin-top: 80px;
+	background-color: #171515;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.conteudo-chamada{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.text-chamada{
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+
+.imgs-chamada{
+	width: 100%;
+}
+
+.grupo-chamada{
+	width: 240px;
+	margin: auto;
+}
+
+.img-chamada-single{
+	width: 80px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 60px;
+	float: left;
+}
+/*chamada*/
+
+/*vantagens:*/
+.vantagens{
+	background-color: #171515;
+	width: 100%;
+}
+
+.text-vantagens{
+	width: 100%;
+	color: white;
+	padding-top: 30px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-bottom: 30px;
+}
+
+.titulo-vantagens{
+	text-align: center;
+	width: 50%;
+}
+
+.titulo-vantagens h1{
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.lista-vantagens{
+	width: 50%;
+	padding: 0 2%;
+}
+
+.lista-vantagens ul{
+	list-style-type: none;
+}
+
+.lista-vantagens li{
+	font-size: 16px;
+	margin: 5px 0;
+	font-weight: 400;
+}
+
+.lista-vantagens li::before{
+	content: "✓";
+	margin-right: 15px;
+}
+/*vantagens*/
+
+/*opcoes:*/
+.opcoes{
+	background-color: #171515;
+}
+
+.planos{
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.caixa-plano{
+	width: calc(100% / 3);
+	float: left;
+	padding: 0 30px;
+	margin-bottom: 50px;
+}
+
+.plano-caixa{
+	width: 100%;
+	height: 550px;
+	background-color: rgb(36, 36, 36);
+	border-radius: 8px;
+}
+
+.plano-caixa .duracao{
+	width: 40%;
+	height: 37px;
+	background-color: green;
+	float: left;
+	border-bottom-right-radius: 10px;
+}
+
+.duracao p{
+	color: rgb(36, 36, 36);
+	font-size: 17px;
+	font-weight: bold;
+	margin: 6px auto;
+	padding-left: 10px;
+}
+
+.premium-caixa{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	padding-top: 30px;
+	padding-left: 15px;
+}
+
+.caixa-logo{
+	width: 30px;
+	height: 30px;
+	background-image: url(../imagens/spotify.svg);
+	background-size: cover;
+}
+
+.premium-caixa h6{
+	color: white;
+	font-size: 18px;
+	margin: auto 6px;
+}
+
+.titulo-caixa{
+	width: 100%;
+	display: inline-block;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-bottom: 10px;
+}
+
+.titulo-caixa h3{
+	color: white;
+}
+
+.titulo-caixa p{
+	color: white;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.caixa-plano hr{
+	border: 0.2px solid white;
+	max-width: 350px;
+	margin: 0 auto;
+}
+
+.lista-vantagens-caixa{
+	width: 95%;
+	padding-top: 25px;
+	padding-left: 15px;
+	margin-left: 10px;
+}
+
+.lista-vantagens-caixa ul{
+	list-style-position: inside;
+}
+
+.lista-vantagens-caixa li{
+	color: white;
+	font-size: 17px;
+}
+
+.lista-vantagens-caixa li span{
+	margin-left: -10px;
+}
+
+.button{
+	text-align: center;
+}
+
+.button input[type=submit]{
+	width: 250px;
+	height: 50px;
+	border-radius: 30px;
+	border: 0;
+	background-color: green;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	margin: 30px auto;
+}
+
+.valor{
+	margin: 20px auto;
+	width: 80%;
+}
+
+.valor p{
+	font-size: 13px;
+	color: rgb(167, 167, 167);
+}
+/*opcoes*/
+/*Premium--------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*ajuda:--------------------------------------------------------------------------------------------------------------------------------------------------*/
+.degrade{
+	background: linear-gradient(transparent,black 60%);
+	padding: 0 2%;
+}
+
+.chamada-ajuda .container{
+	padding-top: 200px;
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+.chamada-ajuda .container h2{
+	margin-top: 20px;
+	color: white;
+}
+
+.chamada-ajuda .container h5{
+	color: white;
+	font-size: 18px;
+	margin-top: 50px;
+	align-self:flex-start;
+}
+
+.ajuda-resources{
+	text-align: center;
+}
+
+.barra-pesquisa{
+	display: block;
+	margin-bottom: 30px;
+}
+
+.search-container{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+  }
+  
+  input#search-bar{
+	margin: 0 auto;
+	width: 100%;
+	height: 50px;
+	padding: 0 20px;
+	font-size: 1rem;
+	border: 1px solid #D0CFCE;
+	border-radius: 3px;
+	outline: none;
+	&:focus{
+	  border: 1px solid #000000;
+	  transition: 0.35s ease;
+	  color: #000000;
+	  &::-webkit-input-placeholder{
+		transition: opacity 0.45s ease; 
+		  opacity: 0;
+	   }
+	  &::-moz-placeholder {
+		transition: opacity 0.45s ease; 
+		  opacity: 0;
+	   }
+	  &:-ms-placeholder {
+	   transition: opacity 0.45s ease; 
+		 opacity: 0;
+	   }    
+	 }
+   }
+  
+  .search-icon{
+	position: relative;
+	float: right;
+	width: 75px;
+	height: 75px;
+	top: -62px;
+	right: -15px;
+  }
+
+.tabela-ajuda{
+	width: 60%;
+	display: inline-block;
+	background-color: #171515;
+	border-radius: 15px;
+	text-align: left;
+}
+
+.tabela-ajuda hr{
+	margin: 0;
+	background-color: white;
+}
+
+.conteudo-tabela-ajuda {
+	padding: 30px 4%;
+}
+
+.conteudo-tabela-ajuda a{
+	color: white;
+}
+
+.conteudo-tabela-ajuda p{
+	margin: 0;
+	font-weight:bold;
+	font-size: 18px;
+}
+/*ajuda--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*baixar::-------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*chamada-baixar:*/
+.chamada-baixar .container{
+	padding-top: 200px;
+	padding-bottom: 100px;
+	text-align: left;
+}
+
+.chamada-baixar .container h2{
+	margin-top: 20px;
+	color: white;
+}
+
+.chamada-baixar .container h5{
+	color: white;
+	font-size: 18px;
+	margin-top: 30px;
+	align-self:flex-start;
+}
+/*chamada-baixar.*/
+
+/*dispositivos:*/
+.dispositivos{
+	background-color: white;
+	display: flex;
+	max-height: 570px;
+}
+
+.dispositivos .container{
+	max-width: 1700px;
+}
+
+.wraper-baixar{
+	display: flex;
+	flex-direction: row;
+}
+
+.sistemas-wraper{
+	width: 50%;
+	padding: 0 2%;
+}
+
+.text-dispositivos{
+	text-align: left;
+}
+
+.text-dispositivos h2{
+	color: #7c25f8;
+}
+
+.text-dispositivos p{
+	font-size: 17px;
+	margin: 20px 0;
+	margin-bottom: 50px;
+}
+
+.button-ajuda{
+	width: 300px;
+	height: 80px;
+	margin: 20px 0;
+	border-radius: 15px;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-color: #1b98e0;
+	text-align: center;
+	color: white;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.button-ajuda a{
+	text-decoration: none;
+	color: white;
+}
+
+.button-ajuda h4{
+	font-size: 30px;
+	padding-top: 15px;
+	margin-bottom: 0;
+}
+
+.button-ajuda p{
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+
+.celular-wraper{
+	position: relative;
+	top: -80px;
+	left: 50px;
+}
+/*dispositivos.*/
+/*baixar.-------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*login:-------------------------------------------------------------------------------------------------------------------------------------------------*/
+.login .container{
+	padding-top: 200px;
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+.login .container h2{
+	margin-top: 20px;
+	color: white;
+}
+
+.form-login{
+	margin: 0 auto;
+	width: 40%;
+	text-align: left;
+	padding: 0 2%;
+}
+
+.form-login p{
+	font-size: 20px;
+	color: white;
+	margin-bottom: 2px;
+	margin-top: 15px;
+}
+
+.form-login input[type=text]{
+	width: 100%;
+	height: 50px;
+	font-size: 17px;
+	padding: 0 2%;
+	border:  0;
+	outline: 0;
+}
+
+.final-login{
+	width: 100%;
+	margin-top: 20px;
+}
+
+.final-login a{
+	text-decoration: underline;
+	color: white;
+}
+
+.final-login p{
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+/*login.-------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media screen and (max-width: 1200px) {
+	.form-login{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width:1149px) {
+	.planos{
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.caixa-plano{
+		width: 50%;
+		
+	}
+}
+
+@media screen and (max-width: 990px) {
+	.form-login{
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 915px) {
+	.chamada-baixar .container{
+		text-align: center;
+	}
+
+	.sistemas-wraper{
+		width: 100%;
+	}
+
+	.text-dispositivos{
+		text-align: center;
+	}
+
+	.celular-wraper{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.caixa-plano{
+		width: 100%;
+		max-width: 450px;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+@media (max-width: 575.98px) {
+	.btn-custom {
+		margin: 10px 15px;
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 770px) {
+	.form-login{
+		width: 70%;
+	}
+
+	.final-login{
+		width: 70%;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.conteudo-chamada{
+		display: inline-block;
+	}
+
+	.search-container{
+		width: 100%;
+	}
+
+	.tabela-ajuda{
+		width: 100%;
+	}
+
+	.text-vantagens{
+		display: inline-block;
+		text-align: center;
+	}
+
+	.titulo-vantagens{
+		width: 100%;
+	}
+
+	.lista-vantagens{
+		width: 100%;
+		text-align: justify;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	h1 {
+		font-size: 3em;
+	}
+	.btn-custom {
+		margin: 10px 15px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	h1 {
+		font-size: 4em;
+	}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	h1 {
+		font-size: 5em;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 6em;
+	}
+}
+
+
